@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--suppress AndroidDomInspection -->
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+  <!--<data>
+
+  </data>-->
+  <android.support.percent.PercentRelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:paddingBottom="@dimen/activity_vertical_margin"
+      android:paddingLeft="@dimen/activity_horizontal_margin"
+      android:paddingRight="@dimen/activity_horizontal_margin"
+      android:paddingTop="@dimen/activity_vertical_margin"
+      tools:context="io.github.tonyshkurenko.palettesetup.MainActivity"
+      >
+
+    <ImageView
+        android:id="@+id/girl"
+        android:contentDescription="@null"
+        app:layout_aspectRatio="100%"
+        app:layout_widthPercent="33%"
+        android:scaleType="centerCrop"
+        tools:src="@drawable/picture_girl"
+        />
+
+    <ImageView
+        android:id="@+id/starry_night"
+        android:layout_toEndOf="@id/girl"
+        android:layout_toRightOf="@id/girl"
+        android:contentDescription="@null"
+        android:scaleType="centerCrop"
+        app:layout_aspectRatio="100%"
+        app:layout_widthPercent="33%"
+        tools:src="@drawable/picture_starry_night"
+        />
+
+    <ImageView
+        android:id="@+id/scream"
+        android:layout_toEndOf="@id/starry_night"
+        android:layout_toRightOf="@id/starry_night"
+        android:contentDescription="@null"
+        android:scaleType="centerCrop"
+        app:layout_aspectRatio="100%"
+        app:layout_widthPercent="33%"
+        tools:src="@drawable/picture_scream"
+        />
+
+    <TextView
+        android:id="@+id/vibrant"
+        android:layout_below="@id/girl"
+        android:text="Vibrant"
+        app:layout_heightPercent="20%"
+        app:layout_widthPercent="100%"
+        style="@style/PaletteTextView"
+        />
+
+    <TextView
+        android:id="@+id/vibrant_dark"
+        android:layout_below="@id/vibrant"
+        android:text="Vibrant dark"
+        app:layout_heightPercent="20%"
+        app:layout_widthPercent="50%"
+        style="@style/PaletteTextView"
+        />
+
+    <TextView
+        android:id="@+id/vibrant_light"
+        android:layout_below="@id/vibrant"
+        android:layout_toEndOf="@id/vibrant_dark"
+        android:layout_toRightOf="@id/vibrant_dark"
+        android:text="Vibrant light"
+        app:layout_heightPercent="20%"
+        app:layout_widthPercent="50%"
+        style="@style/PaletteTextView"
+        />
+
+    <TextView
+        android:id="@+id/muted"
+        android:layout_below="@id/vibrant_dark"
+        android:text="Muted"
+        app:layout_heightPercent="20%"
+        app:layout_widthPercent="100%"
+        style="@style/PaletteTextView"
+        />
+
+    <TextView
+        android:id="@+id/muted_dark"
+        android:layout_below="@id/muted"
+        android:text="Muted dark"
+        app:layout_heightPercent="20%"
+        app:layout_widthPercent="50%"
+        style="@style/PaletteTextView"
+        />
+
+    <TextView
+        android:id="@+id/muted_light"
+        android:layout_below="@id/muted"
+        android:layout_toEndOf="@id/muted_dark"
+        android:layout_toRightOf="@id/muted_dark"
+        android:text="Muted light"
+        app:layout_heightPercent="20%"
+        app:layout_widthPercent="50%"
+        style="@style/PaletteTextView"
+        />
+
+  </android.support.percent.PercentRelativeLayout>
+</layout>
